@@ -1,0 +1,31 @@
+# Parallel arrays
+last_names = [
+    "Smith",
+    "Johnson",
+    "Williams",
+    "Brown",
+    "Jones",
+    "Garcia",
+    "Miller",
+    "Davis",
+    "Rodriguez",
+    "Martinez"
+]
+
+exam_scores = [85, 92, 78, 88, 95, 81, 73, 90, 87, 94]
+
+# Function to display names and scores
+def display_students(names, scores):
+    print("Students and Exam Scores (Original Order):")
+    for i in range(len(names)):
+        print(f"{names[i]} - Score: {scores[i]}")
+
+# Function to display names and scores in reverse order
+def display_students_reverse(names, scores):
+    print("\nStudents and Exam Scores (Reverse Order):")
+    for i in range(len(names) - 1, -1, -1):
+        print(f"{names[i]} - Score: {scores[i]}")
+
+# Main program 
+display_students(last_names, exam_scores)
+display_students_reverse(last_names, exam scores)
