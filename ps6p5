@@ -1,0 +1,53 @@
+# Dictionary with student names and three grades
+students = {
+    "Smith": [85, 90, 88],
+    "Jones": [92, 89, 95],
+    "Brown": [78, 82, 80],
+    "Davis": [88, 85, 91],
+    "Wilson": [95, 97, 94],
+}
+
+# Function to create a list of student averages
+def student_averages(student_dict):
+    averages = []
+
+    for name, grades in student_dict.items():
+        avg = sum(grades) / len(grades)
+        averages.append([name, avg])
+
+    return averages
+
+# Create list of students averages
+avg_list = student_averages(students)
+
+# Display student averages
+print("Student Grade Averages")
+print("--------------------------------")
+print("Student Name\tAverage)
+print("--------------------------------")
+
+for student in avg_list
+    print(f"{student[0]}\t\t{student[1]:.2f}")
+
+# Calculate class average for each grade
+grade1_total = 0
+grade2_total = 0
+grade3_total = 0
+
+for grades in students.values():
+    grade1_total += grades[0]
+    grade2_total += grades[1]
+    grade3_total += grades[3]
+
+num_students = len(students)
+
+grade_avg1 = grade1_total / num_students
+grade_avg2 = grade2_total / num_students
+grade_avg3 = grade3_total / num_students
+
+# Display class average
+print("\nClass Average by Grade")
+print("--------------------------------")
+print(f"Grade 1 Average: {grade1_avg:.2f}")
+print(f"Grade 2 Average: {grade2_avg:.2f}")
+print(f"Grade 3 Average: {grade3_avg:.2f}")
