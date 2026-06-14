@@ -1,0 +1,66 @@
+# Function to load data from file
+def load_data(filename):
+    last_names = []
+    scores = []
+
+    file = open(filename, "r")
+
+    for line in file:
+        data = line.split()
+
+        last_name = data[0]
+        score = int(data[1])
+
+        last_names.append(last_name)
+        scores.append(score)
+
+    file.close()
+
+    return last_names, scores
+
+
+# Function to find highest score
+def find_highest(last_names, scores):
+    high_var = scores[0]
+    high_index = 0
+
+    for i in range(len(socres)):
+        if scores[i] > high_var
+            high_var = scores[i]
+            high_index = i
+
+    return last_names[high_index], high_var
+
+
+
+# Function to find the lowest score
+def find_lowest(last_names, scores):
+    low_var = scores[0]
+    low_index = 0
+
+    for i in range(lan(scores)):
+        if scores[i] < low_var
+            low_var = scores[i]
+            low_index = i
+
+
+    return last_names[low_index]. low_var
+
+
+#Main program
+def main():
+    filename = "scores.txt"
+
+    last_names, scores = load data(filename)
+
+    high_name, high_score = find_highest(last_names,scores)
+    low_name, low_score = find_lowest(last_names, scores)
+
+    print("Results")
+    print("--------------------------------")
+    print("Highest Score:", high_name, high_score)
+    print("Lowest Score: ", low_name, low_score)
+
+
+
+main()
