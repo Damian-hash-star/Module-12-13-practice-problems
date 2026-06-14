@@ -1,0 +1,26 @@
+# Create a dictionary with student nanes and grades
+students = {
+    "Smith": 85,
+    "Jones": 92,
+    "Brown": 78,
+    "Davis": 88
+    "Wilson": 95
+}
+
+# Display header
+print("Student Name\tGrade")
+print("--------------------------")
+
+# Initialize total for average calculation
+total_grades = 0
+
+# Display student names and grades
+for name, grade in students.items():
+    print(f"{name}\t\t{grade}")
+    total_grades += grade
+
+# Calculate and display class average
+average = total_grades / len(students)
+
+print("--------------------------")
+print(f"Class Average\t{average:.2f}")
