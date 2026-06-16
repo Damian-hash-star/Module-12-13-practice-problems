@@ -1,0 +1,22 @@
+# Function to load player data into a dictionary
+def load_players(filename):
+    players = {}
+
+    file = open(filename, "r")
+
+    for line in file:
+        data = line.split()
+
+        last_name = data[0]
+        batting_average = float(data[1])
+
+        players[last_name] = batting_average
+
+    file.close()
+
+    return players
+
+# Function to display dictionary contents
+def display_players(players):
+    print("Player Name      Batting Average")
+    print
