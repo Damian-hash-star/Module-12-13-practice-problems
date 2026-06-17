@@ -19,4 +19,12 @@ def load_players(filename):
 # Function to display dictionary contents
 def display_players(players):
     print("Player Name      Batting Average")
-    print
+    print("--------------------------------")
+
+    for name, average in players.items():
+        print(f"{name:<15} {average:.3f}")
+
+# Main program
+player_dict = load_players("players.txt")
+
+display_players(player_dict)
