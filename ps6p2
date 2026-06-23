@@ -28,4 +28,4 @@ def display_students_reverse(names, scores):
 
 # Main program 
 display_students(last_names, exam_scores)
-display_students_reverse(last_names, exam scores)
+display_students_reverse(last_names, exam_scores)
