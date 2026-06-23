@@ -15,7 +15,7 @@ last_names = [
 # Function to display names
 def display_names(names):
     print("Names in original order:")
-    for name in names
+    for name in names:
         print(name)
 
 # Function to display names in reverse order
@@ -26,4 +26,4 @@ def display_names_reverse(names):
 
 # Main program
 display_names(last_names)
-display_name_reverse(last_names)
+display_names_reverse(last_names)
