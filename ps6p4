@@ -1,10 +1,10 @@
-# Create a dictionary with student nanes and grades
+# Create a dictionary with student names and grades
 students = {
     "Smith": 85,
     "Jones": 92,
     "Brown": 78,
-    "Davis": 88
-    "Wilson": 95
+    "Davis": 88,
+    "Wilson": 95,
 }
 
 # Display header
