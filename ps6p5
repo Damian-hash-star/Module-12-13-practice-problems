@@ -23,10 +23,10 @@ avg_list = student_averages(students)
 # Display student averages
 print("Student Grade Averages")
 print("--------------------------------")
-print("Student Name\tAverage)
+print("Student Name\tAverage")
 print("--------------------------------")
 
-for student in avg_list
+for student in avg_list:
     print(f"{student[0]}\t\t{student[1]:.2f}")
 
 # Calculate class average for each grade
@@ -37,13 +37,13 @@ grade3_total = 0
 for grades in students.values():
     grade1_total += grades[0]
     grade2_total += grades[1]
-    grade3_total += grades[3]
+    grade3_total += grades[2]
 
 num_students = len(students)
 
-grade_avg1 = grade1_total / num_students
-grade_avg2 = grade2_total / num_students
-grade_avg3 = grade3_total / num_students
+grade1_avg = grade1_total / num_students
+grade2_avg = grade2_total / num_students
+grade3_avg = grade3_total / num_students
 
 # Display class average
 print("\nClass Average by Grade")
